@@ -1,7 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	
-	<body>
-	<p>I love you</p>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation with Reveal.js</title>
+    <!-- Liên kết đến CSS của reveal.js từ CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Chào mừng đến với buổi thuyết trình!</h1>
+                <p>Đây là slide đầu tiên.</p>
+            </section>
+            <section>
+                <h2>Slide thứ hai</h2>
+                <p>Nội dung của slide thứ hai.</p>
+            </section>
+            <section>
+                <h2>Slide thứ ba</h2>
+                <ul>
+                    <li>Điểm 1</li>
+                    <li>Điểm 2</li>
+                    <li>Điểm 3</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Liên kết đến JavaScript của reveal.js từ CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js"></script>
+    <script>
+        // Khởi tạo Reveal.js
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide' // Các hiệu ứng chuyển tiếp: 'slide', 'fade', 'zoom', 'none'
+        });
+    </script>
+</body>
 </html>
