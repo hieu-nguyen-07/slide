@@ -16,12 +16,14 @@
             </section>
             <section>
                 <p>Em nhớ học bài nha!!</p>
+                <div id="drawing"></div>
             </section>
             </div>
     </div>
 
     <!-- Liên kết đến JavaScript của reveal.js từ CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.4/svg.min.js"></script>
     <script>
         // Khởi tạo Reveal.js
         Reveal.initialize({
@@ -29,6 +31,8 @@
             slideNumber: true,
             transition: 'slide' // Các hiệu ứng chuyển tiếp: 'slide', 'fade', 'zoom', 'none'
         });
+        const draw = SVG().addTo('#drawing').size(600,400);
+        draw.rect(200, 100).fill('#800080');
     </script>
 </body>
 </html>
